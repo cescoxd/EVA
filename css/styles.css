@@ -1,0 +1,203 @@
+/* Reglas Generales */
+
+* {
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.relleno-lateral {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.relleno-columnas {
+    padding-right: 20px;
+}
+
+/* Estilos Header */
+
+#header {
+    font-size: 30px;
+    text-align: center;
+    padding: 30vh 100px;
+    height: 95vh;
+}
+
+#header i {
+    color: teal;
+    width: 100%;
+}
+
+/* Estilos Body */
+
+.column-1 {
+    float: left;
+    width: 100%;
+}
+
+#section-1 {
+    color: teal;
+    padding-top: 5%;
+    float: left;
+    width: 100%;
+}
+
+#section-1 iframe {
+    width: 100%;
+}
+
+#section-2 {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    float: left;
+    width: 100%;
+}
+
+#section img {
+    width: 100%;
+}
+
+.column-2 h2 {
+    color: teal;
+}
+
+.column-2 {
+    width: 50%;
+}
+
+.column-2 img {
+    box-shadow: 10px 5px 5px rgba(99, 99, 99, 0.555);
+}
+
+#section-3 {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    float: left;
+    width: 100%;
+}
+
+#section-4 {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    float: left;
+    width: 100%;
+}
+
+#section-5 {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    float: left;
+    width: 100%;
+}
+
+#section-6 {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    float: left;
+    width: 100%;
+}
+
+#section-6 img {
+    width: 90%;
+}
+
+#section-7 {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    float: left;
+    width: 100%;
+}
+
+#section-8 {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    float: left;
+    width: 100%;
+}
+
+#section-9 div {
+    color: black;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    background-color: azure;
+}
+
+/* Reglas Auxiliares */
+
+html {
+    scroll-behavior: smooth;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.relleno-lateral {
+    padding-left: 12%;
+    padding-right: 12%;
+}
+
+.relleno-columnas {
+    padding-right: 20px;
+}
+
+/* Estilo Barra Navegación */
+
+#navbar {
+    overflow: hidden;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 5px 5px rgba(99, 99, 99, 0.555);
+    width: 100%;
+    position: sticky;
+    top: 0;
+}
+  
+#navbar a {
+    float: right;
+    display: block;
+    color: #4e4e4e;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+  
+#navbar a:hover {
+    background-color: rgb(199, 199, 199);
+    color: #4e4e4e;;
+}
+
+/* Diseño Responisve */
+
+@media screen and (max-width: 600px) {
+    
+    #header {
+        padding: 30vh 10px;
+    }
+
+    .relleno-columnas {
+        padding-right: 0px;
+    }
+
+    .flex {
+        display: block;
+    }
+
+    .relleno-lateral {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+}

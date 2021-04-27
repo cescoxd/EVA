@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="icon" href="../fontawesome/file-code-regular.svg">
+    <script src="../js/codigo.js"></script>
+    <script src="https://kit.fontawesome.com/3cbe551640.js" crossorigin="anonymous"></script>
+    <title>HTML y CSS</title>
+</head>
+
+<body>
+
+    <div class="flex" id="header">
+        <div class="column-1">
+            <h1>Etiquetas html y els seus principals atributs</h1>
+            <i class="fas fa-laptop-code"></i>
+        </div>
+    </div>
+
+    <div id="navbar">
+        <a href="#section-3">CSS</a>
+        <a href="#section-2">HTML</a>
+        <a href="#section-1">Vídeo</a>
+        <a href="#header" class="active"><i class="fas fa-arrow-up"></i></a>
+    </div>
+
+    <div class="row relleno-lateral" id="section-1">
+            <h2>Conceptes Bàsics de HTML:5</h2>
+            
+            <iframe width="1280" height="720" src="https://www.youtube.com/embed/gaxsPBw-fqQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+    <div class="row relleno-lateral flex" id="section-2">
+        <div class="column-2">
+            <img src="../img/Captura.PNG">
+        </div>
+        <div class="column-2">
+            <H2> Body i els seus atributs </h2>
+                <P> Aquest element és part de l'estructura bàsica d'un document i on es posa tot el contingut de la pàgina.
+                    </P>
+                <P> Aquest element tenia diversos atributs en versions antigues d'HTML. Aquests atributs s'han deixat d'utilitzar i per tant s'han tret, ara tenen atributs generals.
+                    </P>
+        </div>
+    </div>
+
+    <div class="row flex relleno-lateral" id="section-3">
+        <div class="column-2">
+            <H2> P i els seus atributs </h2>
+                <P> Aquesta etiqueta s'utilitza per escriure paràgrafs a les pàgines web.
+                </P>
+                <P> És important recordar de tancar les etiquetes ja que sinó es queden obertes i no funcionen com haurien. </P>
+                <P> Aquesta etiqueta no té etiquetes específiques, només té atributs generals:
+                    
+                    id (Per donar-li una identitat a l'etiqueta)
+                    
+                    , Style (Per donar-li estil)
+                    
+                    , Class (Per assignar una classe)
+                    
+                    , Dir (És per indicar com es va a llegir la llengua, "ltr" d'esquerra a dreta o "rtl" de dreta a esquerra)
+                    
+                    , Lang (Codi de l'idioma)
+                    </P>
+        </div>
+        <div class="column-2">
+            <img src="../img/Captura 2.PNG">
+        </div>
+    </div>
+
+    <div class="row flex relleno-lateral" id="section-4">
+        <div class="column-2">
+            <img src="../img/Captura 3.PNG">
+        </div>
+        <div class="column-2">
+            <H2> a i els seus atributs </h2>
+                <P> Aquest element crea enllaços a diferents pàgines o seccions de la mateixa pàgina.
+                    Els vincles són la part més essencial d'HTML i una de les raons principals per les quals ha nascut.
+                    Els vincles poden ser utilitzats, per enllaçar altres documents, i també per fer referència a una part específica del seu contingut.
+                    </P>
+                <P> Atributs principals:
+                    href: L'URL d'una altra pàgina altra part de la pàgina etc ...
+                    , Target: Li indiques on vols que es es dirigeixi l'enllaç que li has indicat amb l'atribut href. Aquest atribut també serveix per obrir l'enllaç a una pestanya nova, es posaria com es veu a la captura de pantalla de l'esquerra.
+                    </P>
+        </div>
+    </div>
+
+    <div class="row flex relleno-lateral" id="section-5">
+        <div class="column-2">
+            <H2> img i els seus atributs </h2>
+                <P> Aquest element representa una imatge, la qual cosa és un recurs extern que s'insereix en el cos d'un document.
+                    És unes de les poques etiquetes que no cal tancar.
+                    </P>
+                <P> Atributs principals:
+                    src: Indica la URL de la imatge a mostrar.
+                    , Alt: Estableix un text alternatiu que descrigui la imagen.Atributo obligatori). </P>
+        </div>
+        <div class="column-2">
+            <img src="../img/Captura 4.PNG">
+        </div>
+    </div>
+
+    <div class="row flex relleno-lateral" id="section-6">
+        <div class="column-2">
+            <img src="../img/Captura 5.PNG">
+        </div>
+        <div class="column-2">
+            <H2> div i els seus atributs </h2>
+                <P> Aquest element és una etiqueta sense un significat semàntic.
+                    
+                    </P>
+                <P> S'utilitza per dividir seccions i tenir organitzat el codi.
+                    </P>
+                <P> Els autors haurien de considerar a aquesta etiqueta com a últim recurs, reservat únicament per a aquells casos en què elements amb més significat, com main, header, footer, nav o article no són aplicables. </P>
+        </div>
+    </div>
+
+
+    <div class="row" id="section-9">
+        <div class="relleno-lateral column-1">
+            <h3>Canvia l'idioma</h3>
+            <select name="language" id="language" onchange="language()">
+                <option value="ES">Español</option>
+                <option value="CA" selected>Català</option>
+            </select>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+

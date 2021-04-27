@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="icon" href="./fontawesome/file-code-regular.svg">
+    <script src="./js/codigo.js"></script>
+    <script src="https://kit.fontawesome.com/3cbe551640.js" crossorigin="anonymous"></script>
+    <title>HTML y CSS</title>
+</head>
+
+<body>
+
+    <div class="flex" id="header">
+        <div class="column-1">
+            <h1>Etiquetas HTML y sus principales atributos</h1>
+            <i class="fas fa-laptop-code"></i>
+        </div>
+    </div>
+
+    <div id="navbar">
+        <a href="#section-3">CSS</a>
+        <a href="#section-2">HTML</a>
+        <a href="#section-1">Vídeo</a>
+        <a href="#header" class="active"><i class="fas fa-arrow-up"></i></a>
+    </div>
+
+    <div class="row relleno-lateral" id="section-1">
+            <h2>Etiquetas HTML</h2>
+            
+            <iframe width="1280" height="720" src="https://www.youtube.com/embed/gaxsPBw-fqQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+    <div class="row relleno-lateral flex" id="section-2">
+        <div class="column-2">
+            <img src="./img/Captura.PNG">
+        </div>
+        <div class="column-2">
+            <h2>Body y sus atributos</h2>
+            <p>Este elemento es parte de la estructura básica de un documento y donde se pone todo el contenido de la página.
+                </p>
+            <p>Este elemento tenía varios atributos en versiones antiguas de HTML. Estos atributos se han dejado de utilizar y por lo tanto se han quitado, ahora tienen atributos generales.
+                </p>
+        </div>
+    </div>
+
+    <div class="row flex relleno-lateral" id="section-3">
+        <div class="column-2">
+            <h2>P y sus atributos</h2>
+            <p>Esta etiqueta se utiliza para escribir parágrafos en las páginas web.
+            </p>
+            <p>Es importante acordarse de cerrar las etiquetas ya que sinó se quedan abiertas y no funcionan como deberían.</p>
+            <p>Esta etiqueta no tiene etiquetas específicas, solo tiene atributos generales:
+                
+                id (Para darle una identidad a la etiqueta)
+                
+                ,style (Para darle estilo)
+                
+                ,class (Para asignar una clase)
+                
+                ,dir (Es para indicar cómo se va a leer la lengua, "ltr" de izquierda a derecha o "rtl" de derecha a izquierda)
+                
+                ,lang (Código del idioma)
+                </p>
+        </div>
+        <div class="column-2">
+            <img src="./img/Captura 2.PNG">
+        </div>
+    </div>
+
+    <div class="row flex relleno-lateral" id="section-4">
+        <div class="column-2">
+            <img src="./img/Captura 3.PNG">
+        </div>
+        <div class="column-2">
+            <h2>a y sus atributos</h2>
+            <p>Este elemento crea enlaces a diferentes páginas o secciones de la misma página.
+                Los vínculos son la parte más esencial de HTML y una de las razones principales por las que ha nacido.
+                Los vínculos pueden ser utilizados, para enlazar otros documentos, y también para hacer referencia a una parte específica de su contenido.
+                </p>
+            <p>Atributos principales:
+                href: La url de otra página otra parte de la página etc...
+                ,target: Le indicas donde quieres que se se dirija el enlace que le has indicado con el atributo href. Este atributo también sirve para abrir el enlace a una pestaña nueva, se pondría como se ve en la captura de pantalla de la izquierda.
+                </p>
+        </div>
+    </div>
+
+    <div class="row flex relleno-lateral" id="section-5">
+        <div class="column-2">
+            <h2>img y sus atributos</h2>
+            <p>Este elemento representa a una imagen, lo cual es un recurso externo que se inserta en el cuerpo de un documento. 
+                Es unas de las pocas etiquetas que no hace falta cerrar.
+                </p>
+            <p>Atributos principales:
+                src: Indica la URL de la imagen a mostrar.
+                ,alt: Establece un texto alternativo que describa la imagen.Atributo obligatorio).</p>
+        </div>
+        <div class="column-2">
+            <img src="./img/Captura 4.PNG">
+        </div>
+    </div>
+
+    <div class="row flex relleno-lateral" id="section-6">
+        <div class="column-2">
+            <img src="./img/Captura 5.PNG">
+        </div>
+        <div class="column-2">
+            <h2>div y sus atributos</h2>
+            <p>Este elemento es una etiqueta sin un significado semántico.
+                
+                </p>
+            <p>Se utiliza para dividir secciones y tener organizado el código.
+                </p>
+            <p>Los autores deberían considerar a esta etiqueta como último recurso, reservado únicamente para aquellos casos en los que elementos con mayor significado, como main, header, footer, nav o article no son aplicables.</p>
+        </div>
+    </div>
+
+    
+
+    <div class="row" id="section-9">
+        <div class="relleno-lateral column-1">
+            <h3>Selecciona un Idioma:</h3>
+            <select name="language" id="language" onchange="language()">
+                <option value="ES" selected>Español</option>
+                <option value="CA">Català</option>
+            </select>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+
